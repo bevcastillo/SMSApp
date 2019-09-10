@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F0F0F0"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compose Message"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtsearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:background="@drawable/customshape_message"
+            android:padding="15dp"
+            android:hint="To"
+            android:inputType="phone"/>
+
+        <ImageView
+            android:id="@+id/imgcontacts"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_contacts"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtmessage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/customshape_message"
+        android:hint="Write message.."
+        android:gravity="start"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/customshape_btncancel"
+            android:padding="10dp"
+            android:text="cancel"
+            android:textAllCaps="true"
+            android:textColor="#fefefe"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/customshape_btn"
+            android:padding="10dp"
+            android:text="send"
+            android:textAllCaps="true"
+            android:textColor="#fefefe"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

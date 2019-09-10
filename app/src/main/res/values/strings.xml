@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SMS App</string>
+
+    <string-array name="numbers">
+        <item>09065283986</item>
+        <item>09664114873</item>
+        <item>09206086377</item>
+        <item>911</item>
+    </string-array>
+    <string-array name="contactnames">
+        <item>Beverly Castillo</item>
+        <item>Richard Orofeo</item>
+        <item>El-el Remedio</item>
+    </string-array>
+</resources>
